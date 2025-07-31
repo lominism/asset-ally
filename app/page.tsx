@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ClickableImage } from "@/components/ui/clickable-image";
 
 export default function AssetAllyLanding() {
   return (
@@ -230,10 +231,10 @@ export default function AssetAllyLanding() {
                   </ul>
                 </div>
                 <div className="bg-white p-1 rounded-lg shadow-lg lg:order-1">
-                  <Image
+                  <ClickableImage
                     src="/qr-code-management.png"
-                    alt="Inventory Management Dashboard"
-                    width={1000} // use 2x for retina
+                    alt="QR Code Management Interface"
+                    width={1000}
                     height={640}
                     className="w-full h-auto object-contain rounded-lg"
                     priority
@@ -245,10 +246,10 @@ export default function AssetAllyLanding() {
               {/* Screenshot 2 - Asset Assignment */}
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div className="bg-white p-1 rounded-lg shadow-lg lg:order-1">
-                  <Image
+                  <ClickableImage
                     src="/product.png"
-                    alt="Product Assignement Page"
-                    width={1000} // use 2x for retina
+                    alt="Product Assignment Page"
+                    width={1000}
                     height={640}
                     className="w-full h-auto object-contain rounded-lg"
                     priority
@@ -316,10 +317,10 @@ export default function AssetAllyLanding() {
                   </ul>
                 </div>
                 <div className="bg-white p-1 rounded-lg shadow-lg lg:order-1">
-                  <Image
+                  <ClickableImage
                     src="/category-cards.png"
                     alt="Custom Info Cards"
-                    width={1000} // use 2x for retina
+                    width={1000}
                     height={640}
                     className="w-full h-auto object-contain rounded-lg"
                     priority
@@ -331,10 +332,10 @@ export default function AssetAllyLanding() {
               {/* Screenshot 4 - Inventory Dashboard */}
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div className="bg-white p-1 rounded-lg shadow-lg lg:order-1">
-                  <Image
+                  <ClickableImage
                     src="/inventory.png"
                     alt="Inventory Management Dashboard"
-                    width={1000} // use 2x for retina
+                    width={1000}
                     height={640}
                     className="w-full h-auto object-contain rounded-lg"
                     priority
@@ -420,13 +421,15 @@ export default function AssetAllyLanding() {
               </div>
             </div>
             <div className="flex justify-center mt-8">
-              <div className="bg-blue-900/10 p-1 rounded-lg shadow-lg">
-                <Image
+              <div className="bg-blue-900/10 p-1 rounded-lg shadow-lg max-w-[800px]">
+                <ClickableImage
                   src="/all-products.png"
                   alt="All Products"
-                  width={900}
-                  height={540}
+                  width={400}
+                  height={240}
                   priority
+                  quality={95}
+                  className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
             </div>

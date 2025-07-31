@@ -14,7 +14,6 @@ import {
   Package,
   Monitor,
   Laptop,
-  Smartphone,
   Headphones,
   Check,
   Lightbulb,
@@ -70,12 +69,9 @@ export default function AssetAllyLanding() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-6 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <Badge variant="secondary" className="mb-4">
-                Asset Management Made Simple
-              </Badge>
               <div className="space-y-2 max-w-4xl">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Streamline Your Asset Management with{" "}
@@ -423,6 +419,17 @@ export default function AssetAllyLanding() {
                 </p>
               </div>
             </div>
+            <div className="flex justify-center mt-8">
+              <div className="bg-blue-900/10 p-1 rounded-lg shadow-lg">
+                <Image
+                  src="/all-products.png"
+                  alt="All Products"
+                  width={900}
+                  height={540}
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -607,6 +614,18 @@ export default function AssetAllyLanding() {
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center">
                   <div className="text-2xl font-bold text-white mb-2">500+</div>
                   <div className="text-blue-100 text-sm">Assets in Testing</div>
+                </div>
+              </div>
+              <div className="text-center p-6 bg-white rounded-lg border-2 border-blue-200 shadow">
+                <div className="text-lg font-semibold text-blue-800 mb-2">
+                  Get More Information!
+                </div>
+                <div className="text-sm text-gray-600">
+                  See our representatives at{" "}
+                  <span className="font-medium text-gray-800">Tech Sauce</span>{" "}
+                  to sign up for our mailing list. You'll be the first to know
+                  when <span className="text-blue-600">AssetAlly</span> is
+                  ready.
                 </div>
               </div>
             </div>

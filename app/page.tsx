@@ -650,6 +650,10 @@ export default function AssetAllyLanding() {
           </div>
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} AssetAlly. All rights reserved.
+            AssetAlly is a product of{" "}
+            <span className="text-blue-900 font-bold">
+              Magic Box Solutions.
+            </span>
           </p>
           <nav className="flex gap-4 sm:gap-6">
             <Link

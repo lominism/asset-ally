@@ -150,7 +150,7 @@ export default function PricingPage() {
         <section className="w-full py-12 md:py-24 bg-white">
           <div className="container px-4 md:px-6 mx-auto">
             {/* Billing Toggle */}
-            <div className="flex flex-col items-center space-y-8 mb-12">
+            <div className="flex flex-col items-center space-y-4 mb-12">
               <div className="flex items-center space-x-4">
                 <span
                   className={`text-sm font-medium ${
@@ -361,6 +361,9 @@ export default function PricingPage() {
               ))}
             </div>
           </div>
+          <p className="text-xs text-gray-500 mx-auto text-center max-w-md mt-8 mb-0">
+            * Price and features are subject to change during the beta period.
+          </p>
         </section>
 
         {/* Enterprise CTA Section */}

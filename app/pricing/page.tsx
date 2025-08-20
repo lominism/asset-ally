@@ -463,16 +463,20 @@ export default function PricingPage() {
                   Do you offer discounts for annual billing?
                 </h3>
                 <p className="text-gray-600">
-                  Yes! Save 20% when you choose annual billing on any paid plan.
-                  The discount is applied automatically at checkout.
+                  Yes! If you pay for the annual plan upfront, you save on the
+                  monthly rate. The discount is applied automatically at
+                  checkout.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Is there a setup fee?</h3>
                 <p className="text-gray-600">
-                  No setup fees ever. You only pay the monthly or annual
-                  subscription fee for your chosen plan.
+                  There are no setup fees. You only pay the monthly or annual
+                  subscription fee for your chosen plan. However, if you need
+                  help with onboarding or custom setup, we offer professional
+                  services at an additional cost. Please contact our sales team
+                  for more details.
                 </p>
               </div>
             </div>
